@@ -1,7 +1,7 @@
 name: Docker
 on:
   push:
-    tags: ["v*.*.*"]
+     tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/aspcoresample:${{ github.sha }}
 env:
   IMAGE_NAME: dockerumesh
 
